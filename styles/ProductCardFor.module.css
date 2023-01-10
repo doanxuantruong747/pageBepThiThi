@@ -1,0 +1,69 @@
+.container {
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
+.title {
+  margin-top: 3%;
+  display: -webkit-box;
+  max-height: 3.2rem;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  -webkit-line-clamp: 1;
+  line-height: 1.6rem;
+
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #a7cd3a;
+  margin-top: -5px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 600;
+  color: #6d9205;
+  font-family: Georgia;
+}
+
+.image {
+  margin-top: 10%;
+  width: 135px;
+  height: 135px;
+}
+
+@media screen and (max-width: 915px) {
+  .image {
+    margin-top: 12%;
+  }
+
+  .title {
+    font-size: 17px;
+  }
+
+  .price {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .price,
+  .desc {
+    font-size: 16px;
+  }
+}

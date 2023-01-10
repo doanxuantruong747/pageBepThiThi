@@ -1,0 +1,203 @@
+.container {
+  padding: 50px;
+
+}
+
+.left {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  border-radius: 5px;
+  box-shadow: 2px 4px 7px #6d9205;
+  width: 500px;
+  margin-left: 3%;
+  margin-top: 3%;
+  height: auto
+}
+
+
+
+.title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+  border-bottom: solid 0.5px #6d9205;
+  height: 50px;
+}
+
+.status {
+  display: flex;
+  justify-content: space-around;
+  height: 80px;
+  border-bottom: solid 0.5px #6d9205;
+}
+
+
+
+.table {
+  width: 100%;
+  margin-bottom: 50px;
+  margin-left: 5%;
+}
+
+.box {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1%;
+}
+
+.divire {
+  margin: 5% 0%;
+  width: 90%;
+  height: 0.5px;
+  background-color: #6d9205;
+}
+
+.row {
+  width: 100%;
+  margin-top: 3%;
+}
+
+.checkedIcon {
+  height: 100%;
+
+}
+
+.done {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inProgress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: inProgress 1s ease infinite alternate;
+}
+
+@keyframes inProgress {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.undone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.3;
+}
+
+.undone .checkedIcon,
+.inProgress .checkedIcon {
+  display: none;
+}
+
+.dirive {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+
+}
+
+.right {
+  margin-top: 5%;
+  margin-bottom: 15%;
+  margin-left: 3%;
+  width: 100%;
+}
+
+.containerCard {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.cardProduct {
+  width: 320px;
+  border-radius: 7px;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 4px 7px #6d9205;
+}
+
+:hover.cardProduct {
+  cursor: pointer;
+}
+
+.titleProduct {
+  width: 100%;
+  color: #6d9205;
+  font-size: 18px;
+  text-align: center;
+}
+
+.rating {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 100%;
+  text-align: center;
+}
+
+.image {
+  margin-top: 3%;
+}
+
+.center {
+  border-radius: 10px;
+  margin-top: 15%;
+  font-size: 20px;
+  font-weight: 500;
+  height: 50px;
+  color: #fff;
+  background-color: #6d9205;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.textCenter {
+  margin-left: 5%;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .left {
+    width: 97%;
+    font-size: 85%;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .right {
+    margin-left: 0%;
+  }
+
+  .done,
+  .undone,
+  .inProgress {
+    margin-bottom: 20px;
+  }
+
+}

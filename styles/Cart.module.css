@@ -1,0 +1,349 @@
+.container {
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
+.left {
+  width: 65%;
+}
+
+.right {
+  width: 35%;
+  margin-top: 5%;
+  width: 400px;
+}
+
+.imgContainer {
+  width: 70px;
+  height: 70px;
+  position: relative;
+}
+
+/* title */
+.trTitle {
+  display: flex;
+  padding: 10px;
+  font-weight: 600;
+  justify-content: space-between;
+}
+
+.gt {
+  margin-left: 13%;
+}
+
+.sl {
+  margin-left: 7%;
+}
+
+.tt {
+  margin-left: 4%;
+}
+
+/* tr */
+.tr {
+  display: flex;
+  margin-top: 2%;
+}
+
+.detailContainer {
+  width: 100%;
+  display: flex;
+  margin-left: 1%;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.name {
+  width: 14%;
+  font-weight: 500;
+  color: #6d9205;
+  font-size: 16px;
+}
+
+.total {
+  font-weight: 500;
+  font-size: 16px;
+  margin-left: 2%;
+
+}
+
+.dirive {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.wrapper {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  background-color: #a7cd3a;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+  box-shadow: 2px 3px 6px #6d9205;
+}
+
+.totalTextTitle {
+  margin-right: 10px;
+}
+
+.quantity {
+  display: flex;
+  justify-content: center;
+  margin-left: 5%;
+}
+
+
+
+.diminish {
+  text-align: center;
+  border: none;
+  background-color: #b5ee17;
+  color: #fff;
+  width: 30px;
+  height: 25px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.increase {
+  text-align: center;
+  margin-left: 3px;
+  width: 30px;
+  height: 25px;
+  border: none;
+  background-color: #799b1b;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.input {
+  text-align: center;
+  margin-left: 3px;
+  width: 40px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+:hover.diminish {
+  cursor: pointer;
+  background-color: #accf4c;
+}
+
+:hover.increase {
+  cursor: pointer;
+  background-color: #accf4c;
+}
+
+.remove {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  text-align: center;
+
+}
+
+:hover.remove {
+  cursor: pointer;
+}
+
+.button {
+  border-radius: 5px;
+  height: 40px;
+  color: #6d9205;
+  font-weight: bold;
+  margin-top: 20px;
+  border: none;
+  background-color: #fff;
+}
+
+:hover.button {
+  cursor: pointer;
+  background-color: rgb(238, 234, 234);
+}
+
+.title {
+  text-align: center;
+}
+
+.totalText {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputOder {
+  border: none;
+  margin-bottom: 5%;
+  height: 25px;
+  width: 70%;
+  border-radius: 5px;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #accf4c;
+  margin-bottom: 6px;
+  margin-top: 6px;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    padding: 20px;
+  }
+
+  .left {
+    font-size: 85%;
+  }
+
+  .right {
+    width: 300px;
+    font-size: 80%;
+    margin-left: 3%;
+  }
+
+  .gt {
+    margin-left: 13%;
+  }
+
+  .sl {
+    margin-left: 10%;
+  }
+
+  .tt {
+    margin-left: 4%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    margin-top: 5%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .right {
+    width: 100%;
+
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .trTitle {
+    display: none;
+  }
+
+  .tr {
+    width: 320px;
+    height: 170px;
+    margin-bottom: 5%;
+    /* border: solid 0.5px #accf4c; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 2px 3px 6px #6d9205;
+
+  }
+
+  .detailContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 85%;
+    margin-left: 5%;
+  }
+
+  .imgContainer {
+    width: 24vw;
+    height: 24vw;
+    margin-left: 15%;
+  }
+
+  .name {
+    width: 80%;
+    font-weight: 500;
+    color: #6d9205;
+    font-size: 16px;
+  }
+
+  .price {
+    width: 80%;
+  }
+
+  .quantity {
+    margin-left: 3%;
+    width: 100%;
+  }
+
+  .price::before {
+    content: "Giá tiền: ";
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .quantity::before {
+    content: "Số lượng: ";
+    font-weight: 500;
+    font-size: 14px;
+
+  }
+
+  .diminish {
+    margin-left: 1%;
+  }
+
+  .total::before {
+    content: "Thành tiền: ";
+    font-weight: 500;
+    font-size: 16px;
+    width: 80%;
+    margin-left: -5%;
+  }
+
+  .remove {
+    width: 15px;
+    height: 15px;
+    position: relative;
+
+  }
+
+  .wrapper {
+    width: 320px;
+    margin-left: -3%;
+    margin-bottom: 10%;
+  }
+
+  .inputOder {
+    width: 65%;
+  }
+}
