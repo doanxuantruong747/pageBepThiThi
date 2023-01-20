@@ -26,6 +26,7 @@ const Navbar = () => {
       setAuthorId(id)
     }
     dispatch(getCarts())
+
     products.forEach((product) => {
       if (product.author === authorId) {
         counter += product.quantity
@@ -38,6 +39,7 @@ const Navbar = () => {
       }
 
     })
+
     dispatch(getCarts())
   }, [quantity, dispatch])
 

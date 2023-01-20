@@ -119,7 +119,7 @@ export const getProducts =
         const response = await axios.get(`${BASE_URL}/products`, params);
         if (page === 1) dispatch(slice.actions.resetProducts());
         dispatch(slice.actions.getProductSuccess(response.data));
-
+        console.log(response)
       } catch (error) {
         dispatch(slice.actions.hasError(error.message));
         // toast.error(error.message);
@@ -182,3 +182,11 @@ export const getProduct =
 //       }
 //     };
 
+
+export async function getServerSideProps() {
+  const res = await fetch(`${BASE_URL}/products`)
+  const items = await res.json()
+  return {
+    props: {items}, 
+  }
+}
